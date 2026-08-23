@@ -178,3 +178,400 @@ html {
     max-width: 500px;
     border-radius: 15px;
 }
+/* ================================
+   QA WORK - COMPACT BOX DESIGN
+================================ */
+
+.qa-work {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 25px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title p {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+
+.section-title span {
+    font-size: 15px;
+    color: #666;
+}
+
+
+/* 3 boxes in one row */
+.qa-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* Individual square box */
+.qa-card {
+    background: #ffffff;
+    border: 1px solid #e1e5eb;
+    border-radius: 10px;
+    padding: 22px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    transition: all 0.25s ease;
+}
+
+
+/* Hover effect */
+.qa-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+    border-color: #2878f0;
+}
+
+
+/* Icon */
+.qa-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+
+/* Card heading */
+.qa-card h3 {
+    font-size: 18px;
+    color: #172b4d;
+    margin: 0 0 8px;
+}
+
+
+/* Card description */
+.qa-card p {
+    font-size: 13px;
+    color: #777;
+    margin: 0 0 15px;
+}
+
+
+/* Feature list */
+.qa-card ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+
+/* Individual feature */
+.qa-card li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    .qa-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .qa-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qa-work {
+        padding: 40px 15px;
+    }
+
+}
+/* =================================
+   PROFESSIONAL QA SECTIONS
+================================= */
+
+.professional-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 25px;
+}
+
+.section-heading {
+    max-width: 750px;
+    margin-bottom: 40px;
+}
+
+.section-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #2878f0;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    color: #172b4d;
+    margin: 0 0 15px;
+}
+
+.section-heading p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #667085;
+    margin: 0;
+}
+
+
+/* Cards */
+
+.professional-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.professional-card {
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 12px;
+    padding: 25px;
+    min-height: 190px;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+}
+
+.professional-card:hover {
+    transform: translateY(-5px);
+    border-color: #2878f0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.professional-card h3 {
+    color: #172b4d;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.professional-card p {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* Automation Focus */
+
+.testing-focus {
+    margin-top: 30px;
+    background: #f8fafc;
+    border: 1px solid #e4e7ec;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.testing-focus h3 {
+    margin: 0 0 18px;
+    color: #172b4d;
+}
+
+.focus-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.focus-list span {
+    background: #ffffff;
+    border: 1px solid #d9e1ec;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 13px;
+    color: #344054;
+}
+
+
+/* AI Section */
+
+.ai-section {
+    background: #f8fafc;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+
+    .professional-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .professional-section {
+        padding: 55px 18px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .professional-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =================================
+   TOOLS & TECHNOLOGIES
+================================= */
+
+.tools-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 25px;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.tool-card {
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 12px;
+    padding: 22px;
+    min-height: 150px;
+    transition: all 0.25s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    border-color: #2878f0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tool-icon {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.tool-card h3 {
+    font-size: 16px;
+    color: #172b4d;
+    margin: 0 0 8px;
+}
+
+.tool-card p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #667085;
+    margin: 0;
+}
+/* Contact Section */
+
+.contact-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    color: #172b4d;
+    margin-bottom: 15px;
+}
+
+.contact-section > p {
+    color: #667085;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.contact-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 25px;
+}
+
+.contact-heading {
+    max-width: 750px;
+    margin: 0 0 30px 0;
+}
+
+.contact-heading h2 {
+    font-size: 34px;
+    color: #172b4d;
+    margin: 5px 0 12px;
+}
+
+.contact-heading p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #667085;
+    margin: 0;
+}
+
+.contact-cards {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    width: 360px;
+    min-height: 60px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 16px 20px;
+
+    background: #ffffff;
+    border: 1px solid #e1e5eb;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: #172b4d;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    transition: 0.25s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    border-color: #2878f0;
+}
